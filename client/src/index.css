@@ -114,7 +114,9 @@
   .site-nav { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--line); transition: box-shadow .25s ease; }
   .site-nav--scrolled { box-shadow: 0 8px 30px rgba(13,79,74,.09); }
   .nav-inner { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-  .brand { display: inline-flex; align-items: center; gap: 11px; border: 0; background: transparent; padding: 0; text-align: left; }
+  .brand { display: inline-flex; align-items: center; gap: 11px; border: 0; background: transparent; padding: 0; text-align: left; text-decoration: none; }
+  .brand-logo { width: 50px; height: 50px; border-radius: 12px; object-fit: contain; background: #fff; box-shadow: 0 4px 14px rgba(13,79,74,.15); flex-shrink: 0; }
+  .brand-logo--footer { width: 52px; height: 52px; box-shadow: 0 6px 18px rgba(0,0,0,.45); }
   .brand-mark { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; color: #fff; background: var(--teal); box-shadow: 0 8px 18px rgba(13,79,74,.25); }
   .brand-lockup { display: flex; flex-direction: column; gap: 1px; }
   .brand-lockup strong { font-family: var(--display); font-size: 18px; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -.02em; }

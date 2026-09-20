@@ -142,7 +142,7 @@ function Home() {
       <header className={`site-nav ${scrolled ? "site-nav--scrolled" : ""}`}>
         <div className="container nav-inner">
           <a className="brand" href="#home" aria-label="SG Car Rental home">
-            <span className="brand-mark"><Route size={22} strokeWidth={2} /></span>
+            <img src="/images/logo.png" alt="SG Car Rental Logo" className="brand-logo" />
             <span className="brand-lockup"><strong>SG Car Rental</strong><span>TOURS &amp; TRAVELS</span></span>
           </a>
           <nav className={`nav-links ${menuOpen ? "nav-links--open" : ""}`} aria-label="Main navigation">
@@ -372,8 +372,8 @@ function Home() {
       <footer className="site-footer">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <a className="brand" href="#home">
-              <span className="brand-mark"><Route size={22} strokeWidth={2} /></span>
+            <a className="brand" href="#home" aria-label="SG Car Rental home">
+              <img src="/images/logo.png" alt="SG Car Rental Logo" className="brand-logo brand-logo--footer" />
               <span className="brand-lockup"><strong>SG Car Rental</strong><span>TOURS &amp; TRAVELS</span></span>
             </a>
             <p>Your trusted partner for travel across Pune, Mumbai and Maharashtra. Reliable, affordable and comfortable travel solutions, available 24/7.</p>
