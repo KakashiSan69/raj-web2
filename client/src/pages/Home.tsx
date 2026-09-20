@@ -50,11 +50,11 @@ const navItems: [string, string][] = [
   ["Reviews", "#reviews"],
 ];
 
-const stats: [string, string][] = [
-  ["5000+", "Happy Customers"],
-  ["50+", "Expert Drivers"],
-  ["8", "Vehicle Types"],
-  ["24/7", "Always Available"],
+const stats: { value: string; label: string; icon?: LucideIcon }[] = [
+  { value: "5000+", label: "Happy Customers" },
+  { value: "50+", label: "Expert Drivers" },
+  { value: "8+", label: "Vehicle Types", icon: CarFront },
+  { value: "24/7", label: "Always Available" },
 ];
 
 const fleet: { name: string; tag: string; copy: string; image: string; objectPos?: string }[] = [
@@ -194,9 +194,12 @@ function Home() {
         <section className="stats">
           <div className="container">
             <div className="stats-grid">
-              {stats.map(([value, label]) => (
+              {stats.map(({ value, label, icon: Icon }) => (
                 <div className="stat" key={label}>
-                  <strong>{value}</strong>
+                  <strong style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
+                    {Icon && <Icon size={34} strokeWidth={2.4} style={{ color: "var(--gold)" }} />}
+                    <span>{value}</span>
+                  </strong>
                   <span>{label}</span>
                 </div>
               ))}
