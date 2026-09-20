@@ -166,7 +166,7 @@ function Home() {
         <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="container hero-inner">
             <span className="hero-badge"><Star size={13} fill="currentColor" /> Pune &amp; Mumbai&apos;s #1 Travel Service</span>
-            <h1>Book Tempo Traveller, Bus &amp; <em>Taxi in Pune &amp; Mumbai</em></h1>
+            <h1>Book Tempo Traveller, Bus &amp; Taxi in <em>Pune &amp; Mumbai</em></h1>
             <p className="hero-subtitle">
               Safe, reliable and comfortable transportation for airport transfers, sightseeing,
               corporate travel, weddings and outstation trips across Maharashtra.
