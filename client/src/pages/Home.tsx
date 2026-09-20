@@ -53,18 +53,18 @@ const navItems: [string, string][] = [
 const stats: [string, string][] = [
   ["5000+", "Happy Customers"],
   ["50+", "Expert Drivers"],
-  ["7", "Vehicle Types"],
+  ["8", "Vehicle Types"],
   ["24/7", "Always Available"],
 ];
 
-const fleet: { name: string; tag: string; copy: string; image: string }[] = [
-  { name: "Swift Dzire", tag: "Sedan", copy: "Comfortable, fuel-efficient sedan ideal for airport transfers and city rides.", image: "/images/fleet-sedan.png" },
+const fleet: { name: string; tag: string; copy: string; image: string; objectPos?: string }[] = [
+  { name: "Tempo Traveller", tag: "10-17 Seater", copy: "Spacious 10 to 17-seater vehicle for group tours, pilgrimages and corporate outings.", image: "/images/fleet-tempo.png" },
+  { name: "Mercedes Benz Luxury Coach", tag: "35-45 Seater", copy: "Full-size 35-45 seater luxury AC coach for weddings, events and premium group tours.", image: "/images/fleet-bus-mercedes.jpg" },
+  { name: "Deluxe AC Coach Bus", tag: "35-45 Seater", copy: "Comfortable 35-45 seater AC bus for medium to large groups, pilgrimages and family functions.", image: "/images/fleet-bus-ganesh.jpg" },
+  { name: "Force Urbania", tag: "16 Seater", copy: "Modern 16-seater luxury van with plush seating for a premium group journey.", image: "/images/fleet-urbania-real.jpg", objectPos: "center 40%" },
   { name: "Toyota Innova Crysta", tag: "Luxury SUV", copy: "Premium 7-seater for family trips, outstation tours and business travel.", image: "/images/fleet-suv.png" },
   { name: "Maruti Ertiga", tag: "7 Seater", copy: "Spacious and economical 7-seater, perfect for families and small groups.", image: "/images/fleet-mpv.png" },
-  { name: "Tempo Traveller", tag: "12-17 Seater", copy: "Roomy vehicle for group tours, pilgrimages and corporate outings.", image: "/images/fleet-tempo.png" },
-  { name: "Force Urbania", tag: "Premium Van", copy: "Modern luxury van with plush seating for a premium group journey.", image: "/images/fleet-urbania.png" },
-  { name: "Luxury Coach Bus", tag: "35-45 Seater", copy: "Full-size AC coach for weddings, events and large group departures.", image: "/images/fleet-bus.png" },
-  { name: "Mini Bus", tag: "21 Seater", copy: "Comfortable AC mini bus for medium groups, tours and functions.", image: "/images/fleet-bus.png" },
+  { name: "Swift Dzire", tag: "Sedan", copy: "Comfortable, fuel-efficient sedan ideal for airport transfers and city rides.", image: "/images/fleet-sedan.png" },
   { name: "Honda City", tag: "Premium", copy: "Premium sedan for executive travel and stylish airport transfers.", image: "/images/fleet-sedan.png" },
 ];
 
@@ -210,7 +210,12 @@ function Home() {
               {fleet.map((v) => (
                 <article className="fleet-card" key={v.name}>
                   <div className="fleet-image-wrap">
-                    <img src={v.image || "/placeholder.svg"} alt={`${v.name} available for booking in Pune and Mumbai`} loading="lazy" />
+                    <img
+                      src={v.image || "/placeholder.svg"}
+                      alt={`${v.name} available for booking in Pune and Mumbai`}
+                      style={v.objectPos ? { objectPosition: v.objectPos } : undefined}
+                      loading="lazy"
+                    />
                     <span className="fleet-tag">{v.tag}</span>
                   </div>
                   <div className="fleet-content">
