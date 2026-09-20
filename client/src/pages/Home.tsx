@@ -127,7 +127,7 @@ function Home() {
   const closeMenu = () => setMenuOpen(false);
 
   const bookMsg = (vehicle: string) =>
-    `Hello Pune Mumbai Tours & Travels (SG Car Rental), I would like to book the ${vehicle}. Please share availability and quotation.`;
+    `Hello SG Car Rental, I would like to book the ${vehicle}. Please share availability and quotation.`;
 
   return (
     <div className="site-shell">
@@ -141,9 +141,9 @@ function Home() {
 
       <header className={`site-nav ${scrolled ? "site-nav--scrolled" : ""}`}>
         <div className="container nav-inner">
-          <a className="brand" href="#home" aria-label="Pune Mumbai Tours & Travels home">
+          <a className="brand" href="#home" aria-label="SG Car Rental home">
             <span className="brand-mark"><Route size={22} strokeWidth={2} /></span>
-            <span className="brand-lockup"><strong>Pune Mumbai</strong><span>TOURS &amp; TRAVELS</span></span>
+            <span className="brand-lockup"><strong>SG Car Rental</strong><span>TOURS &amp; TRAVELS</span></span>
           </a>
           <nav className={`nav-links ${menuOpen ? "nav-links--open" : ""}`} aria-label="Main navigation">
             {navItems.map(([label, href]) => (
@@ -165,7 +165,7 @@ function Home() {
       <main id="home">
         <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="container hero-inner">
-            <span className="hero-badge"><Star size={13} fill="currentColor" /> Pune &amp; Mumbai&apos;s #1 Travel Service</span>
+            <span className="hero-badge"><Star size={13} fill="currentColor" /> SG Car Rental &mdash; #1 Travel Service</span>
             <h1>Book Tempo Traveller, Bus &amp; Taxi in Pune &amp; Mumbai</h1>
             <p className="hero-subtitle">
               Safe, reliable and comfortable transportation for airport transfers, sightseeing,
@@ -250,7 +250,7 @@ function Home() {
               <p className="kicker">About Us</p>
               <h2 className="section-title">Your Trusted Travel <em>Partner in Maharashtra</em></h2>
               <p>
-                At <strong>Pune Mumbai Tours &amp; Travels (SG Car Rental)</strong>, we are committed to providing
+                At <strong>SG Car Rental</strong>, we are committed to providing
                 safe, reliable and comfortable transportation across Pune, Mumbai and all of
                 Maharashtra. Whether you need an airport transfer, railway pickup, local sightseeing,
                 hotel transfer or an outstation journey, our professional drivers and well-maintained
@@ -380,7 +380,7 @@ function Home() {
           <div className="footer-brand">
             <a className="brand" href="#home">
               <span className="brand-mark"><Route size={22} strokeWidth={2} /></span>
-              <span className="brand-lockup"><strong>Pune Mumbai</strong><span>TOURS &amp; TRAVELS</span></span>
+              <span className="brand-lockup"><strong>SG Car Rental</strong><span>TOURS &amp; TRAVELS</span></span>
             </a>
             <p>Your trusted partner for travel across Pune, Mumbai and Maharashtra. Reliable, affordable and comfortable travel solutions, available 24/7.</p>
             <div className="footer-social">
@@ -388,7 +388,7 @@ function Home() {
               <a href="#home" aria-label="Instagram"><Instagram size={18} /></a>
               <a href="#home" aria-label="Twitter"><Twitter size={18} /></a>
               <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello Pune Mumbai Tours & Travels, I would like to book a vehicle.")}`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello SG Car Rental, I would like to book a vehicle.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -418,14 +418,14 @@ function Home() {
         </div>
         <div className="footer-bottom">
           <div className="container">
-            &copy; {year} Pune Mumbai Tours &amp; Travels (SG Car Rental). All Rights Reserved. Crafted for the road ahead.
+            &copy; {year} SG Car Rental. All Rights Reserved. Crafted for the road ahead.
           </div>
         </div>
       </footer>
 
       <div className="floating-actions">
-        <a className="floating-call" href={`tel:${PHONE_TEL}`} aria-label="Call Pune Mumbai Tours & Travels"><Phone size={20} /></a>
-        <a className="floating-wa" href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" aria-label="WhatsApp Pune Mumbai Tours & Travels"><MessageCircle size={22} /></a>
+        <a className="floating-call" href={`tel:${PHONE_TEL}`} aria-label="Call SG Car Rental"><Phone size={20} /></a>
+        <a className="floating-wa" href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" aria-label="WhatsApp SG Car Rental"><MessageCircle size={22} /></a>
       </div>
     </div>
   );
