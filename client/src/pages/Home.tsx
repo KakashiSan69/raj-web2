@@ -59,34 +59,64 @@ const navItems = [
 
 const fleet = [
   {
-    name: "Tempo Traveller",
-    eyebrow: "The all-rounder",
-    description: "Spacious, social and ready for family trips, pilgrimages and long weekends.",
-    capacity: "12–17 seats",
-    luggage: "Generous luggage bay",
-    image: "/images/fleet-vehicle.webp",
+    name: "Maruti Ertiga",
+    eyebrow: "Family favourite",
+    description: "Comfortable 7-seater for family trips, airport transfers and everyday outstation travel.",
+    capacity: "Up to 7 passengers",
+    luggage: "Large luggage space",
+    image: "/images/reference/ertiga.jpg",
     accent: "#d9a441",
     icon: CarFront,
   },
   {
-    name: "Bus",
-    eyebrow: "Made for more",
-    description: "Reliable group movement for events, employee travel and multi-day departures.",
-    capacity: "20–45 seats",
-    luggage: "Full underfloor storage",
-    image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=82",
+    name: "Toyota Etios",
+    eyebrow: "Everyday comfort",
+    description: "Fuel-efficient and spacious sedan for city rides, airport pickups and longer routes.",
+    capacity: "Up to 4 passengers",
+    luggage: "Spacious boot",
+    image: "/images/reference/etios.jpg",
+    accent: "#b8c2d1",
+    icon: Navigation,
+  },
+  {
+    name: "Honda City",
+    eyebrow: "Premium sedan",
+    description: "A polished choice for business travel, airport transfers and comfortable city journeys.",
+    capacity: "Up to 4 passengers",
+    luggage: "Premium boot space",
+    image: "/images/reference/honda-city.jpg",
+    accent: "#d9a441",
+    icon: Navigation,
+  },
+  {
+    name: "Innova Crysta",
+    eyebrow: "Premium MPV",
+    description: "Extra comfort and room for family holidays, long drives and premium travel plans.",
+    capacity: "Up to 7 passengers",
+    luggage: "Flexible luggage space",
+    image: "/images/reference/innova-crysta.jpg",
+    accent: "#d9a441",
+    icon: CarFront,
+  },
+  {
+    name: "Tempo Traveller",
+    eyebrow: "The all-rounder",
+    description: "Spacious, social and ready for pilgrimages, group tours and multi-day journeys.",
+    capacity: "12–17 seats",
+    luggage: "Generous luggage bay",
+    image: "/images/reference/tempo-traveller.jpg",
     accent: "#b8c2d1",
     icon: BusFront,
   },
   {
-    name: "Taxi / Cab",
-    eyebrow: "Just the essentials",
-    description: "Effortless city rides, airport transfers and flexible point-to-point travel.",
-    capacity: "1–4 passengers",
-    luggage: "Boot space",
-    image: "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1000&q=82",
+    name: "Mini Bus",
+    eyebrow: "Made for more",
+    description: "Reliable group movement for events, employee travel and large family departures.",
+    capacity: "20–45 seats",
+    luggage: "Full underfloor storage",
+    image: "/images/reference/mini-bus.jpg",
     accent: "#d9a441",
-    icon: Navigation,
+    icon: BusFront,
   },
 ];
 
@@ -169,6 +199,7 @@ function Home() {
 
   return (
     <div className="site-shell">
+      <div className="announcement-bar"><span>Premium travel across Pune & Mumbai</span><a href={`tel:${PHONE_DISPLAY.replace(/\s/g, "")}`}>Book now at <strong>{PHONE_DISPLAY}</strong></a></div>
       <header className={`site-nav ${scrolled ? "site-nav--scrolled" : ""}`}>
         <div className="container nav-inner">
           <button className="brand" onClick={() => scrollTo("#home")} aria-label="Pune Mumbai Tours & Travels home">
@@ -225,7 +256,7 @@ function Home() {
                 <label><span>From</span><div className="input-wrap"><Navigation size={15} /><input required value={form.from} onChange={(e) => setForm({ ...form, from: e.target.value })} placeholder="Pickup city or location" /></div></label>
                 <label><span>To</span><div className="input-wrap"><MapPin size={15} /><input required value={form.to} onChange={(e) => setForm({ ...form, to: e.target.value })} placeholder="Destination" /></div></label>
                 <label><span>Travel date</span><div className="input-wrap"><CalendarDays size={15} /><input type="date" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} /></div></label>
-                <label><span>Vehicle type</span><div className="input-wrap"><CarFront size={15} /><select value={form.vehicle} onChange={(e) => setForm({ ...form, vehicle: e.target.value })}><option>Tempo Traveller</option><option>Bus</option><option>Taxi / Cab</option></select><ChevronDown size={14} /></div></label>
+                <label><span>Vehicle type</span><div className="input-wrap"><CarFront size={15} /><select value={form.vehicle} onChange={(e) => setForm({ ...form, vehicle: e.target.value })}><option>Maruti Ertiga</option><option>Toyota Etios</option><option>Honda City</option><option>Innova Crysta</option><option>Tempo Traveller</option><option>Mini Bus</option></select><ChevronDown size={14} /></div></label>
                 <label><span>Passengers</span><div className="input-wrap"><UsersRound size={15} /><select value={form.passengers} onChange={(e) => setForm({ ...form, passengers: e.target.value })}><option>1–4</option><option>5–10</option><option>11–17</option><option>18–35</option><option>36+</option></select><ChevronDown size={14} /></div></label>
                 <button className="button button--gold booking-submit" type="submit">{formSent ? "WhatsApp opened" : "Get instant quote"} <ArrowUpRight size={16} /></button>
               </div>
