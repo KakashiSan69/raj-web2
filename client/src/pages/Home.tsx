@@ -40,9 +40,9 @@ const PHONE_DISPLAY = "+91 96044 76616";
 const ADDRESS = "JQGM+M3R, Kalewadi Rd, Tanaji Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411033";
 
 const heroImage =
-  "/manus-storage/hero-highway_80ddd4f0.jpg";
+  "/images/hero-highway.webp";
 const interiorImage =
-  "/manus-storage/travel-interior_89942a87.jpg";
+  "/images/travel-interior.webp";
 
 const openWhatsApp = (message: string) => {
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
@@ -64,7 +64,7 @@ const fleet = [
     description: "Spacious, social and ready for family trips, pilgrimages and long weekends.",
     capacity: "12–17 seats",
     luggage: "Generous luggage bay",
-    image: "/manus-storage/fleet-vehicle_c33b598c.png",
+    image: "/images/fleet-vehicle.webp",
     accent: "#d9a441",
     icon: CarFront,
   },
