@@ -173,14 +173,12 @@ function Home() {
             </p>
             <div className="hero-actions">
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call Now</a>
-              <a
+              <button
                 className="button button--wa"
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(bookMsg("a vehicle"))}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => openWhatsApp(bookMsg("a vehicle"))}
               >
                 <MessageCircle size={17} /> WhatsApp
-              </a>
+              </button>
             </div>
             <div className="hero-trust">
               <span><CheckCircle2 size={15} /> Verified drivers</span>
@@ -229,14 +227,12 @@ function Home() {
                   <div className="fleet-content">
                     <h3>{v.name}</h3>
                     <p>{v.copy}</p>
-                    <a
+                    <button
                       className="fleet-book"
-                      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(bookMsg(v.name))}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      onClick={() => openWhatsApp(bookMsg(v.name))}
                     >
                       Book Now <ArrowRight size={15} />
-                    </a>
+                    </button>
                   </div>
                 </article>
               ))}
@@ -362,14 +358,12 @@ function Home() {
             <p>Experience Maharashtra&apos;s most trusted travel service. Get instant bookings, professional drivers and the best rates guaranteed.</p>
             <div className="cta-actions">
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call {PHONE_DISPLAY}</a>
-              <a
+              <button
                 className="button button--wa"
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(bookMsg("a vehicle"))}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => openWhatsApp(bookMsg("a vehicle"))}
               >
                 <MessageCircle size={17} /> WhatsApp Us
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -387,17 +381,16 @@ function Home() {
               <a href="#home" aria-label="Facebook"><Facebook size={18} /></a>
               <a href="#home" aria-label="Instagram"><Instagram size={18} /></a>
               <a href="#home" aria-label="Twitter"><Twitter size={18} /></a>
-              <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello SG Car Rental, I would like to book a vehicle.")}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                className="footer-social-btn"
+                onClick={() => openWhatsApp("Hello SG Car Rental, I would like to book a vehicle.")}
                 aria-label="WhatsApp"
                 style={{ all: "unset" }}
               >
                 <span style={{ display: "grid", placeItems: "center", width: 40, height: 40, borderRadius: 11, background: "rgba(255,255,255,.08)", color: "#fff", cursor: "pointer" }}>
                   <MessageCircle size={18} />
                 </span>
-              </a>
+              </button>
             </div>
           </div>
           <div className="footer-col">
