@@ -1,0 +1,7 @@
+Visual verification notes
+
+- Desktop full-page capture at 1440px: hierarchy, typography, hero image, booking card, fleet grid, dark/light section rhythm, route scroller, FAQ, contact and footer render as intended.
+- Mobile capture at 390px: hamburger navigation, stacked hero CTAs, responsive heading scale, no visible horizontal overflow, and fixed call/WhatsApp actions are present.
+- The interior asset is intentionally lazy-loaded below the fold for performance; it is a valid generated image and should appear when the section enters the viewport.
+- Generated managed assets used: /manus-storage/hero-highway_80ddd4f0.jpg, /manus-storage/fleet-vehicle_c33b598c.png, /manus-storage/travel-interior_89942a87.jpg.
+- Build and TypeScript checks passed before visual capture.
