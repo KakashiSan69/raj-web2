@@ -144,10 +144,11 @@
   /* Stats bar */
   .stats { background: var(--teal); color: #fff; }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .stat { padding: 40px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,.12); }
+  .stat { padding: 42px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,.12); }
   .stat:last-child { border-right: 0; }
-  .stat strong { display: block; font-family: var(--display); font-size: clamp(32px, 4vw, 46px); font-weight: 800; color: var(--gold); line-height: 1; }
-  .stat span { display: block; margin-top: 10px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.82); }
+  .stat strong, .stat .stat-num { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--display); font-size: clamp(38px, 4.5vw, 54px); font-weight: 800; color: var(--gold); line-height: 1; }
+  .stat .stat-icon { color: var(--gold); flex-shrink: 0; }
+  .stat > span, .stat .stat-label { display: block; margin-top: 12px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.92); }
 
   /* Fleet */
   .fleet-section { background: var(--mint); }

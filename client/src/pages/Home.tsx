@@ -196,11 +196,11 @@ function Home() {
             <div className="stats-grid">
               {stats.map(({ value, label, icon: Icon }) => (
                 <div className="stat" key={label}>
-                  <strong style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
-                    {Icon && <Icon size={34} strokeWidth={2.4} style={{ color: "var(--gold)" }} />}
-                    <span>{value}</span>
+                  <strong className="stat-num">
+                    {Icon && <Icon size={42} strokeWidth={2.4} className="stat-icon" />}
+                    {value}
                   </strong>
-                  <span>{label}</span>
+                  <span className="stat-label">{label}</span>
                 </div>
               ))}
             </div>
