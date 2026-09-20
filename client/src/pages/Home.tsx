@@ -127,7 +127,7 @@ function Home() {
   const closeMenu = () => setMenuOpen(false);
 
   const bookMsg = (vehicle: string) =>
-    `Hello Pune Mumbai Tours & Travels, I would like to book the ${vehicle}. Please share availability and quotation.`;
+    `Hello Pune Mumbai Tours & Travels (SG Car Rental), I would like to book the ${vehicle}. Please share availability and quotation.`;
 
   return (
     <div className="site-shell">
@@ -250,7 +250,7 @@ function Home() {
               <p className="kicker">About Us</p>
               <h2 className="section-title">Your Trusted Travel <em>Partner in Maharashtra</em></h2>
               <p>
-                At <strong>Pune Mumbai Tours &amp; Travels</strong>, we are committed to providing
+                At <strong>Pune Mumbai Tours &amp; Travels (SG Car Rental)</strong>, we are committed to providing
                 safe, reliable and comfortable transportation across Pune, Mumbai and all of
                 Maharashtra. Whether you need an airport transfer, railway pickup, local sightseeing,
                 hotel transfer or an outstation journey, our professional drivers and well-maintained
@@ -418,7 +418,7 @@ function Home() {
         </div>
         <div className="footer-bottom">
           <div className="container">
-            &copy; {year} Pune Mumbai Tours &amp; Travels. All Rights Reserved. Crafted for the road ahead.
+            &copy; {year} Pune Mumbai Tours &amp; Travels (SG Car Rental). All Rights Reserved. Crafted for the road ahead.
           </div>
         </div>
       </footer>
