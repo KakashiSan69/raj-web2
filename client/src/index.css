@@ -76,6 +76,7 @@
 
 @layer components {
   .container { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 22px; }
+  @media (min-width: 1600px) { .container { max-width: 1320px; } }
   .site-shell { overflow: clip; background: #fff; }
 
   h1, h2, h3, h4, h5 { font-family: var(--display); }
@@ -259,12 +260,22 @@
   .fleet-grid, .why-grid, .routes-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid, .testi-grid { grid-template-columns: repeat(2, 1fr); }
   .about-layout { grid-template-columns: 1fr; gap: 40px; }
+  .section { padding: 74px 0; }
+  .section-head { margin-bottom: 42px; }
+  .hero { min-height: 560px; }
+  .hero-inner { padding: 76px 0; }
 }
 
 @media (max-width: 720px) {
-  .section { padding: 62px 0; }
+  .container { padding-inline: 18px; }
+  .section { padding: 58px 0; }
+  .section-head { margin-bottom: 34px; }
   .topbar { font-size: 10.5px; letter-spacing: .02em; padding: 8px 12px; gap: 6px; line-height: 1.35; }
   .topbar svg { flex-shrink: 0; }
+  .hero { min-height: auto; }
+  .hero-inner { padding: 62px 0; max-width: 100%; }
+  .hero::before { background: linear-gradient(180deg, rgba(9,55,51,.86) 0%, rgba(9,55,51,.7) 60%, rgba(9,55,51,.82) 100%); }
+  .hero-actions .button { flex: 1 1 auto; }
   .nav-links { position: fixed; inset: 0 0 auto 0; top: 74px; flex-direction: column; align-items: stretch; gap: 0; background: #fff; padding: 10px 22px 20px; border-bottom: 1px solid var(--line); box-shadow: 0 20px 40px rgba(13,79,74,.12); transform: translateY(-12px); opacity: 0; pointer-events: none; transition: transform .25s ease, opacity .25s ease; }
   .nav-links--open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .nav-links a { padding: 14px 4px; border-bottom: 1px solid var(--line); }
@@ -276,4 +287,15 @@
   .stat:nth-child(2) { border-right: 0; }
   .fleet-grid, .services-grid, .why-grid, .routes-grid, .testi-grid, .about-cards { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+  .hero-actions, .cta-actions { flex-direction: column; }
+  .hero-actions .button, .cta-actions .button { width: 100%; }
+  .about-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 460px) {
+  .container { padding-inline: 15px; }
+  .stat { padding: 28px 12px; }
+  .about-cards { grid-template-columns: 1fr; }
+  .floating-actions a { width: 48px; height: 48px; }
+  .fleet-content h3, .service-card h3 { font-size: 18px; }
 }
