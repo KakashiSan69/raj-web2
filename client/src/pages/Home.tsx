@@ -58,10 +58,10 @@ const stats: { value: string; label: string; icon?: LucideIcon }[] = [
 ];
 
 const fleet: { name: string; tag: string; copy: string; image: string; objectPos?: string }[] = [
+  { name: "Force Urbania", tag: "16 Seater", copy: "Modern 16-seater luxury van with plush seating for a premium group journey.", image: "/images/fleet-urbania-new.jpg" },
   { name: "Tempo Traveller", tag: "10-17 Seater", copy: "Spacious 10 to 17-seater vehicle for group tours, pilgrimages and corporate outings.", image: "/images/fleet-tempo.png" },
-  { name: "Luxury AC Bus", tag: "35-45 Seater", copy: "Full-size 35-45 seater luxury AC coach for weddings, events and premium group tours.", image: "/images/fleet-bus-mercedes.jpg" },
-  { name: "Deluxe AC Coach Bus", tag: "35-45 Seater", copy: "Comfortable 35-45 seater AC bus for medium to large groups, pilgrimages and family functions.", image: "/images/fleet-bus-ganesh.jpg" },
-  { name: "Force Urbania", tag: "16 Seater", copy: "Modern 16-seater luxury van with plush seating for a premium group journey.", image: "/images/fleet-urbania-real.jpg", objectPos: "center 40%" },
+  { name: "30 / 48 Sleeper Bus", tag: "30 / 48 Sleeper", copy: "Ultra-comfortable 30 to 48-seater luxury AC sleeper coach with plush berths for long-distance travel.", image: "/images/fleet-bus-turquoise.png", objectPos: "center 60%" },
+  { name: "Deluxe 45 Seater Bus", tag: "45 Seater", copy: "Full-size 45-seater luxury AC coach for weddings, events and premium group tours.", image: "/images/fleet-bus-sleeper.png", objectPos: "center 72%" },
   { name: "Toyota Innova Crysta", tag: "Luxury SUV", copy: "Premium 7-seater for family trips, outstation tours and business travel.", image: "/images/fleet-suv.png" },
   { name: "Maruti Ertiga", tag: "7 Seater", copy: "Spacious and economical 7-seater, perfect for families and small groups.", image: "/images/fleet-mpv.png" },
   { name: "Swift Dzire", tag: "Sedan", copy: "Comfortable, fuel-efficient sedan ideal for airport transfers and city rides.", image: "/images/fleet-sedan.png" },
