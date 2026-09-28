@@ -175,7 +175,7 @@ function Home() {
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call Now</a>
               <a
                 className="button button--wa"
-                href="https://wa.me/+919604476616"
+                href="https://wa.me/919604476616"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -362,7 +362,7 @@ function Home() {
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call {PHONE_DISPLAY}</a>
               <a
                 className="button button--wa"
-                href="https://wa.me/+919604476616"
+                href="https://wa.me/919604476616"
                 target="_blank"
                 rel="noreferrer"
               >
