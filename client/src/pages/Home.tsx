@@ -31,8 +31,8 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 const WHATSAPP_NUMBER = "919604476616";
-const PHONE_DISPLAY = "+91 96044 76616";
-const PHONE_TEL = "+919604476616";
+const PHONE_DISPLAY = "919604476616";
+const PHONE_TEL = "919604476616";
 const EMAIL = "punemumbaitravels@gmail.com";
 const ADDRESS = "Kalewadi Road, Tanaji Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411033";
 
