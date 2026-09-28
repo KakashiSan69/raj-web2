@@ -173,12 +173,14 @@ function Home() {
             </p>
             <div className="hero-actions">
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call Now</a>
-              <button
+              <a
                 className="button button--wa"
-                onClick={() => openWhatsApp(bookMsg("a vehicle"))}
+                href="https://wa.me/+919604476616"
+                target="_blank"
+                rel="noreferrer"
               >
                 <MessageCircle size={17} /> WhatsApp
-              </button>
+              </a>
             </div>
             <div className="hero-trust">
               <span><CheckCircle2 size={15} /> Verified drivers</span>
@@ -227,12 +229,12 @@ function Home() {
                   <div className="fleet-content">
                     <h3>{v.name}</h3>
                     <p>{v.copy}</p>
-                    <button
+                    <a
                       className="fleet-book"
-                      onClick={() => openWhatsApp(bookMsg(v.name))}
+                      href={`tel:${PHONE_TEL}`}
                     >
                       Book Now <ArrowRight size={15} />
-                    </button>
+                    </a>
                   </div>
                 </article>
               ))}
@@ -358,12 +360,14 @@ function Home() {
             <p>Experience Maharashtra&apos;s most trusted travel service. Get instant bookings, professional drivers and the best rates guaranteed.</p>
             <div className="cta-actions">
               <a className="button button--gold" href={`tel:${PHONE_TEL}`}><Phone size={17} /> Call {PHONE_DISPLAY}</a>
-              <button
+              <a
                 className="button button--wa"
-                onClick={() => openWhatsApp(bookMsg("a vehicle"))}
+                href="https://wa.me/+919604476616"
+                target="_blank"
+                rel="noreferrer"
               >
                 <MessageCircle size={17} /> WhatsApp Us
-              </button>
+              </a>
             </div>
           </div>
         </section>
